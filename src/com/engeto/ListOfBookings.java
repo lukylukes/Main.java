@@ -2,7 +2,7 @@ package com.engeto;
 
 import java.util.List;
 
-public class listOfBookings {
+public class ListOfBookings {
     private List<Booking> bookingList;
 
     ///region
@@ -16,7 +16,7 @@ public class listOfBookings {
     ///endregion
 
 
-    public listOfBookings(List<Booking> bookingList) {
+    public ListOfBookings(List<Booking> bookingList) {
         this.bookingList = bookingList;
     }
 }

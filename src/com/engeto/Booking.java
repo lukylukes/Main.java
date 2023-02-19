@@ -1,43 +1,35 @@
 package com.engeto;
 
 import java.time.LocalDate;
-import java.util.List;
 
 public class Booking {
 
-    private Room numberOfRoom;
-    private Guest guest;
-    private List<Guest> otherGuests;
+    private int numberOfRoom;
+    private int guest;
     private LocalDate startDay;
     private LocalDate endDay;
     private boolean isRecreation;
-    private boolean isWork;
+
+
 
 
     ///region
-    public Room getRoom() {
+    public int getRoom() {
         return numberOfRoom;
     }
 
-    public void setRoom(Room room) {
+    public void setRoom(int room) {
         this.numberOfRoom = room;
     }
 
-    public Guest getGuest() {
+    public int getGuest() {
         return guest;
     }
 
-    public void setGuest(Guest guest) {
+    public void setGuest(int guest) {
         this.guest = guest;
     }
 
-    public List<Guest> getOtherGuests() {
-        return otherGuests;
-    }
-
-    public void setOtherGuests(List<Guest> otherGuests) {
-        this.otherGuests = otherGuests;
-    }
 
     public LocalDate getStartDay() {
         return startDay;
@@ -63,24 +55,15 @@ public class Booking {
         isRecreation = recreation;
     }
 
-    public boolean isWork() {
-        return isWork;
-    }
-
-    public void setWork(boolean work) {
-        isWork = work;
-    }
     ///endregion
 
 
-    public Booking(Room room, Guest guest, List<Guest> otherGuests,
-                   LocalDate startDay, LocalDate endDay, boolean isRecreation, boolean isWork) {
+    public Booking(int room, int guest,
+                   LocalDate startDay, LocalDate endDay, boolean isRecreation) {
         this.numberOfRoom = room;
         this.guest = guest;
-        this.otherGuests = otherGuests;
         this.startDay = startDay;
         this.endDay = endDay;
         this.isRecreation = isRecreation;
-        this.isWork = isWork;
     }
 }

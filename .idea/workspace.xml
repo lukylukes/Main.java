@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e4de3e4a-d330-4eef-a9e2-2e3dd1c4c305" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hotel.domaci.ukol.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/Booking.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/Guest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/Room.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/engeto/listOfBookings.java" afterDir="false" />
-    </list>
+    <list default="true" id="e4de3e4a-d330-4eef-a9e2-2e3dd1c4c305" name="Changes" comment="domácí úkol hotel" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +32,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "settings.editor.selected.configurable": "copyright"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -56,6 +45,41 @@
       <option name="presentableId" value="Default" />
       <updated>1676373670006</updated>
     </task>
+    <task id="LOCAL-00001" summary="domácí úkol hotel - chybový">
+      <created>1676496904482</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676496904482</updated>
+    </task>
+    <task id="LOCAL-00002" summary="domácí úkol hotel - opravený">
+      <created>1676817667751</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676817667751</updated>
+    </task>
+    <task id="LOCAL-00003" summary="domácí úkol hotel">
+      <created>1676817847623</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676817847623</updated>
+    </task>
+    <task id="LOCAL-00004" summary="domácí úkol hotel">
+      <created>1676817889645</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676817889645</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="domácí úkol hotel - chybový" />
+    <MESSAGE value="domácí úkol hotel - opravený" />
+    <MESSAGE value="domácí úkol hotel" />
+    <option name="LAST_COMMIT_MESSAGE" value="domácí úkol hotel" />
   </component>
 </project>

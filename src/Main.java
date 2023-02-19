@@ -1,12 +1,15 @@
 import com.engeto.Booking;
 import com.engeto.Guest;
+import com.engeto.ListOfBookings;
 import com.engeto.Room;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.BlockingDeque;
 
 public class Main {
     public static void main(String[] args) {
@@ -37,48 +40,17 @@ public class Main {
                 " beds" + ", has not balcony but has sea view for " + room3.getPricePerNight() +
                 "Kč/night.");
 
-        Booking reservation1 = new Booking(1, 1, 0,
-                LocalDate.of(2021, 7, 19),
-                LocalDate.of(2021, 7, 26), true, false);
-        Booking reservation2 = new Booking(3, 1, 2,
-                LocalDate.of(2021, 9, 1),
-                LocalDate.of(2021, 9, 14), true, false);
+
+        Booking reservation1 = new Booking(1, 1, LocalDate.of(2021, 7, 19),
+                LocalDate.of(2021, 7, 26), true);
+        Booking reservation2 = new Booking(3, 2, LocalDate.of(2021, 9, 1),
+                LocalDate.of(2021, 9, 14), true);
 
 
+        ArrayList<Booking> ListOfBookings = new ArrayList<>();
+        ListOfBookings.add(reservation1);
+        ListOfBookings.add(reservation2);
 
-
-        /*
-        Booking reservation1;
-        Booking reservation2;
-
-        reservation1 = new Booking(room1, guest1, List.of(), LocalDate.of(2021, 7, 19),
-                LocalDate.of(2021, 7, 26));
-        reservation2 = new Booking(room3,guest1, List.of(guest2),LocalDate.of(2021, 9, 1),
-                LocalDate.of(2021, 9, 14));
-
-        System.out.println(reservation1.getGuest());
-        System.out.println(reservation1.getRoom());
-        System.out.println(reservation1.getStartDay());
-        System.out.println(reservation1.getEndDay());
-
-        System.out.println(reservation2.getGuest());
-        System.out.println(reservation2.getRoom());
-        System.out.println(reservation2.getOtherGuests());
-        System.out.println(reservation2.getStartDay());
-        System.out.println(reservation2.getEndDay());
-
-        ArrayList<Booking> ListOFBookings = new ArrayList<>();
-        ListOFBookings.add(reservation1);
-        ListOFBookings.add(reservation2);
-
-        System.out.println(ListOFBookings);
-        System.out.println(ListOFBookings.size());
-
-        for (Booking booking : ListOFBookings) {
-            System.out.println(booking.getGuest()+ "("+ booking.getOtherGuests()+ "(" +
-                    booking.getRoom()+ "("+ booking.getStartDay()+ "("+ booking.getEndDay());
-
-        }
-         */
+        System.out.println(ListOfBookings);
     }
 }
