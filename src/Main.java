@@ -47,10 +47,10 @@ public class Main {
                 LocalDate.of(2021, 9, 14), true);
 
 
-        ArrayList<Booking> ListOfBookings = new ArrayList<>();
-        ListOfBookings.add(reservation1);
-        ListOfBookings.add(reservation2);
+        ArrayList<Booking> listOfBookings = new ArrayList<>();
+        listOfBookings.add(reservation1);
+        listOfBookings.add(reservation2);
 
-        System.out.println(ListOfBookings);
+        System.out.println(listOfBookings);
     }
 }
