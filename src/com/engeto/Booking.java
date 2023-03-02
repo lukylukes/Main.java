@@ -4,8 +4,8 @@ import java.time.LocalDate;
 
 public class Booking {
 
-    private int numberOfRoom;
-    private int guest;
+    private Room room;
+    private Guest guest;
     private LocalDate startDay;
     private LocalDate endDay;
     private boolean isRecreation;
@@ -14,19 +14,19 @@ public class Booking {
 
 
     ///region
-    public int getRoom() {
-        return numberOfRoom;
+    public Room getRoom() {
+        return room;
     }
 
-    public void setRoom(int room) {
-        this.numberOfRoom = room;
+    public void setRoom(Room room) {
+        this.room = room;
     }
 
-    public int getGuest() {
+    public Guest getGuest() {
         return guest;
     }
 
-    public void setGuest(int guest) {
+    public void setGuest(Guest guest) {
         this.guest = guest;
     }
 
@@ -58,9 +58,9 @@ public class Booking {
     ///endregion
 
 
-    public Booking(int room, int guest,
+    public Booking(Room room, Guest guest,
                    LocalDate startDay, LocalDate endDay, boolean isRecreation) {
-        this.numberOfRoom = room;
+        this.room = room;
         this.guest = guest;
         this.startDay = startDay;
         this.endDay = endDay;

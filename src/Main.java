@@ -1,15 +1,11 @@
 import com.engeto.Booking;
 import com.engeto.Guest;
-import com.engeto.ListOfBookings;
 import com.engeto.Room;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
-
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.BlockingDeque;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,16 +37,32 @@ public class Main {
                 "Kč/night.");
 
 
-        Booking reservation1 = new Booking(1, 1, LocalDate.of(2021, 7, 19),
+        Booking booking1 = new Booking(room1, guest1, LocalDate.of(2021, 7, 19),
                 LocalDate.of(2021, 7, 26), true);
-        Booking reservation2 = new Booking(3, 2, LocalDate.of(2021, 9, 1),
+        booking1.setGuest(guest1);
+        Booking booking2 = new Booking(room3, guest2, LocalDate.of(2021, 9, 1),
                 LocalDate.of(2021, 9, 14), true);
+        booking2.setGuest(guest1);
+        booking2.setGuest(guest2);
+
+        System.out.println("Booking1 - room "  +room1.getNumberOfRoom());
+        System.out.println("Guest " + guest1.getFirstName() + guest1.getLastName());
+        System.out.println("with arrive " + booking1.getStartDay());
+        System.out.println("to " + booking1.getEndDay());
+        System.out.println("recreation " + booking1.isRecreation());
+
+        System.out.println("Booking2 - room " + room3.getNumberOfRoom());
+        System.out.println("Guests " + guest1.getFirstName() + guest1.getLastName() + " and "
+                + guest2.getFirstName() + guest2.getLastName());
+        System.out.println("with arrive " + booking2.getStartDay());
+        System.out.println("to " + booking2.getEndDay());
+        System.out.println("recreation " + booking2.isRecreation());
 
 
-        ArrayList<Booking> listOfBookings = new ArrayList<>();
-        listOfBookings.add(reservation1);
-        listOfBookings.add(reservation2);
+        List<Booking> bookingList = new ArrayList<>();
+        bookingList.add(booking1);
+        bookingList.add(booking2);
+        System.out.println(bookingList);
 
-        System.out.println(listOfBookings);
     }
 }
